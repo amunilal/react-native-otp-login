@@ -1,4 +1,26 @@
 module.exports = {
   root: true,
-  extends: '@react-native-community',
-};
+  parser: '@typescript-eslint/parser',
+  extends: [
+    '@react-native-community',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+  ],
+  rules: {
+    'prettier/prettier': 1,
+    'no-trailing-spaces': 0,
+    'react-hooks/exhaustive-deps': 0,
+    'react-native/no-inline-styles': 0,
+    '@typescript-eslint/ban-ts-ignore': 0,
+    '@typescript-eslint/ban-ts-comment': 0,
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/no-empty-interface': 0,
+    '@typescript-eslint/no-use-before-define': 0,
+    '@typescript-eslint/no-var-requires': 0,
+    '@typescript-eslint/explicit-function-return-type': 0,
+    '@typescript-eslint/member-delimiter-style': 0,
+    '@typescript-eslint/no-non-null-assertion': 0,
+    '@typescript-eslint/no-empty-function': 0,
+    '@typescript-eslint/no-extra-non-null-assertion': 0,
+  },
+}
